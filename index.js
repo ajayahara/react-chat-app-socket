@@ -1,5 +1,5 @@
 const { Server } = require("socket.io");
-const io = new Server({ cors: "https://64f80886b409573932a11602--peppy-starlight-842ad9.netlify.app" });
+const io = new Server({ cors: "https://64f95cdf981eec34698a169b--jade-crostata-0e14bd.netlify.app" });
 let onlineUser = [];
 io.on("connection", (socket) => {
     socket.on("addNewUser", (userId) => {
