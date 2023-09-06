@@ -1,5 +1,5 @@
 const { Server } = require("socket.io");
-const io = new Server({ cors: "http://localhost:5173" });
+const io = new Server({ cors: "https://64f80886b409573932a11602--peppy-starlight-842ad9.netlify.app" });
 let onlineUser = [];
 io.on("connection", (socket) => {
     socket.on("addNewUser", (userId) => {
@@ -24,4 +24,4 @@ io.on("connection", (socket) => {
 
 
 
-io.listen(3000)
+io.listen(9090)
